@@ -1,6 +1,6 @@
-# ČSSD FORM
+# ČSSZ FORM
 
-Generates XML form from HTML  
+Generates XML form from HTML ("přehled o výši pojistného")
 
 ## details
 
