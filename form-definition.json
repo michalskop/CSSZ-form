@@ -1,0 +1,110 @@
+{
+"jqm": true,
+"populate": false,
+"legend": "Přehled pro ČSSZ",
+"title": "Přehled pro ČSSZ",
+"id": "form",
+"action": "create_xml.php",
+"method": "GET",
+"submit_id": "submit",
+"children": [
+    {
+      "id": "organization",
+      "label": "Sdružení",
+      "flip": [
+        {
+          "value": "cz",
+          "html": "CZ"
+        },
+        {
+          "value": "sk",
+          "html": "SK"
+        }
+      ],
+      "type": "flip"
+    },
+    
+    {
+      "legend": "Období",
+      "children": [
+        {
+          "id": "month",
+          "label": "Měsíc",
+          "placeholder" : "např. 1",
+          "type": "number"
+        },
+        {
+          "id": "year",
+          "label": "Rok",
+          "placeholder" : "např. 2014",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "legend": "1. Pojistné za zaměstnance s účastí na pojištění bez důchodového spoření",
+      "children": [
+      {
+          "id": "uhrnVymerovacichZakladuPbezDS",
+          "label": "Úhrn vyměřovacích základů",
+          "placeholder" : "např. 39200",
+          "type": "number"
+        },
+        {
+          "id": "uhrnPojistnehoPbezDS",
+          "label": "Úhrn pojistného",
+          "placeholder" : "např. 2548",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "legend": "2. Pojistné za zaměstnance s účastí na pojištění s důchodovým spořením",
+      "children": [
+      {
+          "id": "uhrnVymerovacichZakladuPsDS",
+          "label": "Úhrn vyměřovacích základů",
+          "placeholder" : "např. 0",
+          "type": "number"
+        },
+        {
+          "id": "uhrnPojistnehoPsDS",
+          "label": "Úhrn pojistného",
+          "placeholder" : "např. 0",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "legend": "3. Pojistné za zaměstnavatele",
+      "children": [
+      {
+          "id": "uhrnVymerovacichZakladu",
+          "label": "Úhrn vyměřovacích základů",
+          "placeholder" : "např. 39200",
+          "type": "number"
+        },
+        {
+          "id": "uhrnPojistneho",
+          "label": "Úhrn pojistného",
+          "placeholder" : "např. 9800",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Datum (formát YYYY-MM-DD)",
+      "placeholder": "např. 2014-01-16",
+      "type": "text"
+    },
+    {
+      "id": "submit",
+      "label": "Submit",
+      "value": "Submit",
+      "type": "submit"
+    }
+    
+    
+  ]
+}

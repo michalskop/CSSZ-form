@@ -1,0 +1,131 @@
+{
+"jqm": true,
+"populate": true,
+"legend": "Form Example",
+"title": "Form I",
+"id": "form",
+"onsubmit": "submit_form()",
+"method": "GET",
+"submit_id": "Id10",
+"children": [
+    {
+      "id": "Id1",
+      "label": "URL",
+      "placeholder": "URL address, e.g., http://example.com",
+      "type": "url"
+    },
+    {
+      "id": "Id2",
+      "label": "Password",
+      "placeholder": "Secret password",
+      "type": "password"
+    },
+    {
+      "legend": "Form subpart 1",
+      "children": [
+        {
+          "id": "Id3",
+          "label": "Textarea",
+          "type": "textarea"
+        },
+        {
+          "id": "Id4",
+          "label": "Select color",
+          "placeholder": "HTML color; e.g., #abcdef",
+          "type": "color"
+        },
+        {
+          "id": "Id5",
+          "label": "Number",
+          "placeholder" : "Number; e.g., 3.14159",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "Id6",
+      "label": "Select simple",
+      "option": [
+        {
+          "html": "SELECT"
+        },
+        {
+          "value": "1",
+          "html": "One"
+        },
+        {
+          "value": "2",
+          "html": "Two"
+        }
+      ],
+      "type": "select"
+    },
+    {
+      "id": "Id7",
+      "label": "Select multiple",
+      "multiple": true,
+      "option": [
+        {
+          "html": "SELECT (mult.)"
+        },
+        {
+          "value": "1",
+          "html": "One"
+        },
+        {
+          "value": "2",
+          "html": "Two"
+        },
+        {
+          "value": "3",
+          "html": "Three"
+        }
+      ],
+      "type": "select"
+    },
+    {
+      "id": "Id8",
+      "legend": "Radio (horizontal)",
+      "horizontal": true,
+      "radio": [
+        {
+          "value": "0",
+          "label": "Zero"
+        },
+        {
+          "value": "1",
+          "label": "One"
+        },
+        {
+          "value": "2",
+          "label": "Two",
+          "checked": true
+        }
+      ],
+      "type": "radio"
+    },
+    {
+      "id": "Id9",
+      "label": "Flip",
+      "flip": [
+        {
+          "value": "2",
+          "html": "Two"
+        },
+        {
+          "value": "3",
+          "html": "Three",
+          "selected": true
+        }
+      ],
+      "type": "flip"
+    },
+    {
+      "id": "Id10",
+      "label": "Submit",
+      "value": "Submit",
+      "type": "submit"
+    }
+  ]
+
+}

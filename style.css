@@ -1,0 +1,23 @@
+.fieldcontain {
+    border-left: 1px solid #CCC;
+    padding-left: .2em;
+}
+@media all and (min-width: 36em){
+    .fieldcontain {
+        padding-left: 1em;
+        padding-top: 0.5em;
+    }
+}
+.ui-field-contain > label {
+  float: none;
+}
+.ui-field-contain>label+[class*=ui-] {
+  float: none;
+}
+
+.ui-field-contain > label + [class*="ui-"] {
+  width: 100%;
+}
+.ui-field-contain .ui-controlgroup-controls {
+    width: 100%;
+}
